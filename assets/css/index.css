@@ -12,6 +12,7 @@
         margin-left: 10px;
 
         li {
+            font-size: 0.7rem !important;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -33,7 +34,7 @@
         }
     }
 
-    div {
+    .newsletter {
         width: 100%;
         background-color: #d1ac66;
         display: flex;
@@ -48,18 +49,34 @@
             text-align: center;
         }
 
-        div {
-            width: 100%;
+        form {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 5px; // space between input and button
+            width: 100%;
 
             input, button {
                 height: 20px;
                 border: none;
+                background-color: white;
+                font-size: 0.75rem;
+                padding: 3px 15px;
+
+                &::placeholder {
+                    color: lightgray;
+                }
             }
 
+            input {
+                flex-grow: 1;
+                min-width: 0;
+            }
+
+            button {
+                flex-shrink: 0;
+            }
         }
     }
 }
