@@ -2,15 +2,24 @@
 <html>
     <head>
         <title>Spa Center</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="David Brezovnik">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/index.css">
-        <script src="./assets/js/main"></script>
+        <link rel="stylesheet" href="./assets/css/content.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/sidebar.css">
+        <script src="./assets/js/main.js"></script>
+        <style>
+            sup {
+                margin: 0;
+            }
+        </style>
     </head>
     <body>
         <div class="main-layout">
             <header class="header">
                 <ul>
-                    <li class="selected">Storitve</li>
+                    <li class="selected" style="top: 0;">Storitve</li>
                     <li>Cenik</li>
                     <li>Center lepote</li>
                     <li>Fotogalerija</li>
@@ -28,10 +37,85 @@
                 </div>            
             </header>
             <nav class="sidebar">
-    
+                <ul>
+                    <li>
+                        <a href="masaža.html">masaža</a>
+                        <img src="./assets/images/chevron-down.png" alt="chevron-down">
+                    </li>
+                    <li class="selected">
+                        <a href="./index.html">nega obraza</a>
+                        <img src="./assets/images/chevron-down.png" alt="chevron-down">
+                    </li>
+                    <li>
+                        <a href="klasična-nega-obraza.html" class="subitem">klasična nega obraza</a>
+                    </li>
+                    <li>
+                        <a href="diamantni-piling.html" class="subitem">diamantni piling</a>
+                    </li>
+                    <li class="last-subitem">
+                        <a href="intenzivna-maska-za-oči.html" class="subitem">intenzivna maska za oči</a>
+                    </li>    
+                    <li>
+                        <a href="nega-rok.html">nega rok</a>
+                        <img src="./assets/images/chevron-down.png" alt="chevron-down">
+                    </li>
+                    <li>
+                        <a href="nega-telesa.html">nega telesa</a>
+                        <img src="./assets/images/chevron-down.png" alt="chevron-down">
+                    </li>
+                </ul>
+                <form class="rezervation-container">
+                    <h2>Rezervirajte svoj termin</h2>
+                    <span>TEL: <b>01 256 28 60</b></span>
+                    <span>GSM: <b>041 573 852</b></span>
+
+                    <label for="name">Ime: *</label>
+                    <input id="name" type="text" required>
+
+                    <label for="email">E-pošta: *</label>
+                    <input id="email" type="email" required>
+
+                    <label for="date">Datum in ura: *</label>
+                    <input type="datetime" id="date" required>
+
+                    <label for="msg">Sporočilo:</label>
+                    <textarea type="textarea" id="msg" required></textarea>
+
+                    <button type="submit">Pošlji</button>
+                </form>
             </nav>
             <main class="content">
-    
+                <img class="title" src="./assets/images/title.png" alt="">
+                <p>
+                    Sijoč in svež obraz, ki izžareva naravno lepoto, je verjetno želja vsake ženske, pa tudi marsikaterega moškega. Mladosten videz odraža dobro počutje, veselje in ustvarja pozitiven vtis. Vendar pa mnogi zunanji dejavniki, neuravnotežena in nekakovostna prehrana, premalo spanca, stres, skrbi in tudi notranji dejavniki negativno vplivajo na kožo.
+                </p><br>
+                <p>
+                    Ponujamo vam storitve nege obraza, s katerimi bomo poskrbeli, da bo vaša koža spet sijoča in zdrava.
+                </p>
+                <div class="content-item">
+                    <img src="./assets/images/spa1.jpg" alt="">
+                    <div>
+                        <a href="klasična-nega-obraza.html">Klasična nega obraza</a>
+                        <p>S klasično nego obraza bomo sprostili in izboljšali vašo kožo, jo očistili, navlažili in nahranili. Svetovali vam bomo, kako lahko vsak dan skrbite za svojo kožo glede na njene specifične lastnosti. Privoščite sebi in svoji koži sproščujoč tretma.</p>
+                        <a class="more" href="klasična-nega-obraza.html">Več ...</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="./assets/images/spa2.jpg" alt="">
+                    <div>
+                        <a href="diamantni-piling.html">Diamantni piling</a>
+                        <p>Diamantni piling je nekirurški poseg luščenja plasti kože s pomočjo drobnih kapljic zraka ali kristalov, s čimer dosežemo, da se tvorijo nove celice v povrhnjici, stimulira se izločanje kolagena in elastina ter se izboljša struktura kože.</p>
+                        <a class="more" href="diamantni-piling.html">Več ...</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="./assets/images/spa3.jpg" alt="">
+                    <div>
+                        <a href="klasična-nega-obraza.html">Intenzivna maska za oči</a>
+                        <p>Na koži okoli oči se znaki staranja najhitreje pokažejo. Z intenzivno masko za oči boste ublažili posledice negativnih dejavnikov, na primer pomanjkanja spanca, uživanja kofeina ali preslane hrane. Hialuronska maska zapolni gubice in odpravlja zabuhlost.</p>
+                        <a class="more" href="klasična-nega-obraza.html">Več ...</a>
+                    </div>
+                </div>
             </main>
         </div>
     </body>
